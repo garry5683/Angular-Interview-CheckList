@@ -1,0 +1,30 @@
+{
+  "entities": {
+    "checklistState": {
+      "title": "Checklist State",
+      "description": "User specific state for the checklist app",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "The UID of the user who owns this state"
+        },
+        "checkedItems": {
+          "type": "object",
+          "description": "Mapping of checked items"
+        },
+        "expandedSections": {
+          "type": "object",
+          "description": "Mapping of expanded sections"
+        }
+      },
+      "required": ["userId"]
+    }
+  },
+  "firestore": {
+    "/checklistState/{userId}": {
+      "schema": "checklistState",
+      "description": "Stores user preferences and checklist progress"
+    }
+  }
+}

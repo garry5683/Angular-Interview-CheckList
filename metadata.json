@@ -1,0 +1,6 @@
+{
+  "name": "Angular Interview Checklist",
+  "description": "A comprehensive checklist application for Angular Frontend interview preparation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
